@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+    /* scroll-padding: 80px; */
+    overscroll-behavior: none;
+}
+body{
+    min-width: 360px;
+    overscroll-behavior: none;
+}
+
+main{
+    @apply  text-white bg-gradient-to-b from-[#1773DA] to-[#0A387C] min-h-screen
+}
+._section {
+    @apply w-full p-5
+}
+._wrapper {
+    @apply p-5  max-w-[1440px] mx-auto bg-white rounded-[8px] md:rounded-[40px] border-[0.5px] border-[#5F9Ad7] 
+}
