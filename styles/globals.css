@@ -12,12 +12,29 @@ body{
     overscroll-behavior: none;
 }
 
-main{
-    @apply  text-white bg-gradient-to-b from-[#1773DA] to-[#0A387C] min-h-screen
-}
 ._section {
-    @apply w-full p-5
+    @apply w-full p-5 h-svh relative
 }
 ._wrapper {
-    @apply p-5  max-w-[1440px] mx-auto bg-white rounded-[8px] md:rounded-[40px] border-[0.5px] border-[#5F9Ad7] 
+    @apply relative z-30 p-5 max-w-[1536px] mx-auto
+    text-[18px]
+}
+._h2{
+    @apply text-[50px] xs:text-[60px] md:text-[70px] lg:text-[80px] leading-none 
+}
+._text-outline-black {
+    text-shadow: 
+      1px 1px 0 #000, 
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+     -1px  1px 0 #000;
+  }
+  .striped-background {
+    background: repeating-linear-gradient(
+        90deg,     /* Угол градиента (90 градусов для вертикальных полос) */
+        #da262c,       /* Начальный цвет */
+        #da262c 15px,  /* Ширина первой полосы */
+        white 15px,/* Начало следующей полосы (та же ширина) */
+        white 30px /* Конец второй полосы (удваиваем ширину для повторения) */
+    );
 }
