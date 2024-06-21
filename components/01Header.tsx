@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import bg from "../public/1.jpg"
+import bg from "../public/01Header/bg.jpg"
 export default function Header(){
     return(
         <section className="_section relative">
@@ -10,16 +10,9 @@ export default function Header(){
             </div>
 
             <div className="_wrapper">
-
-                <h1 className="text-white text-[60px] leading-none">
-                    Кресло Tabby
+                <h1>
+                    Chabby Chair
                 </h1>
-                <div>
-                    Стиль, Комфорт, Практичность...
-                </div>
-                <div>
-                    Цена, зачеркнутая, рядом нормальная и обратный отсчет!
-                </div>
             </div>
         </section>
     )

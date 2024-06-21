@@ -13,7 +13,7 @@ body{
 }
 
 ._section {
-    @apply w-full p-5 h-svh relative
+    @apply w-full p-5 h-svh md:h-auto relative
 }
 ._wrapper {
     @apply relative z-30 p-5 max-w-[1536px] mx-auto
@@ -21,20 +21,4 @@ body{
 }
 ._h2{
     @apply text-[50px] xs:text-[60px] md:text-[70px] lg:text-[80px] leading-none 
-}
-._text-outline-black {
-    text-shadow: 
-      1px 1px 0 #000, 
-     -1px -1px 0 #000,  
-      1px -1px 0 #000,
-     -1px  1px 0 #000;
-  }
-  .striped-background {
-    background: repeating-linear-gradient(
-        90deg,     /* Угол градиента (90 градусов для вертикальных полос) */
-        #da262c,       /* Начальный цвет */
-        #da262c 15px,  /* Ширина первой полосы */
-        white 15px,/* Начало следующей полосы (та же ширина) */
-        white 30px /* Конец второй полосы (удваиваем ширину для повторения) */
-    );
 }

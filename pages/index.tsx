@@ -1,21 +1,17 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Header from "@/components/01Header";
-import About from "@/components/02About";
-import Delivery from "@/components/03Delivery";
-import Gallery from "@/components/04Gallery";
-import Footer from "@/components/05Footer";
+import Order from "@/components/02Order";
+import Help from "@/components/03Help";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
     return (
         <main className={`${inter.className}`}>
-            <Header />
-            <About />
-            <Delivery />
-            <Gallery />
-            <Footer />
+            {/* <Header /> */}
+            <Order />
+            <Help />
         </main>
     );
 }
