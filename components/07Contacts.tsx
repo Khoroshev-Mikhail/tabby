@@ -20,6 +20,8 @@ export default function Contacts(){
                     </div>
                     <div>
                         Поддержка клиентов / Сотрудничество 
+                    </div>
+                    <div>
                         <a className="_clicked_a" href="mailto:chabbychair@gmail.com">
                             chabbychair@gmail.com
                         </a>

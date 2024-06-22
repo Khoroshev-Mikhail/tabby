@@ -21,6 +21,11 @@ body{
 }
 ._h2{
     @apply text-[50px] xs:text-[60px] md:text-[70px] lg:text-[80px] leading-none 
+    py-5
+}
+h3{
+    @apply text-[20px] xs:text-[25px] md:text-[30px] lg:text-[35px] leading-none 
+    py-3
 }
 ._clicked_a{
     @apply border-dashed border-b-[1px] border-gray-300 hover:border-none
