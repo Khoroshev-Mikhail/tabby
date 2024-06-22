@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
         <Head>
-            <title>Tabby</title>
+            <title>Tabby кресло</title>
         </Head>
         <body>
             <Main />
