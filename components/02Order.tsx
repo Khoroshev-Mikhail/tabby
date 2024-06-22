@@ -3,16 +3,26 @@ import bg from "../public/2.jpg"
 import { useState } from "react";
 import CountOrder from "./00CountOrder";
 
+export type color = {
+    name: string,
+    color: string,
+    count: number
+}
+
+const COLORS = [
+    { name: 'Красно-белый', color: '#000000', count: 0 },
+    { name: 'Синий', color: '#000000', count: 0 },
+    { name: 'Розовый', color: '#000000', count: 0 },
+    { name: 'Желтый', color: '#000000', count: 0 },
+]
+
 export default function Order(){
-    const [ whiteRed, setWhiteRed ] = useState<number>(0)
-    const [ blue, setBlue ] = useState<number>(0)
-    const [ pink, setPink ] = useState<number>(0)
-    const [ yellow, setYellow ] = useState<number>(0)
+    const [ order, setOrder ] = useState<color[]>(COLORS);
 
     return(
         <section className="_section relative">
             <div className="_wrapper">
-                <h2>
+                <h2 className="_h2">
                     Сделать заказ
                 </h2>
                 <div>
@@ -20,7 +30,16 @@ export default function Order(){
                         Выберите цвет и количество
                     </div>
                     <div className="flex flex-col">
-                        <CountOrder state={whiteRed} setState={setWhiteRed}/>
+                        {
+                            order.map( el => {
+                                return <CountOrder state={ el } setState={ setOrder }/>
+                            })
+                        }
+                    </div>
+                    <div>
+                        <button>
+                            Заказать
+                        </button>
                     </div>
                 </div>
             </div>
