@@ -57,7 +57,6 @@ export default function Header(){
                                 spaceBetween: 30
                             },
                         }}
-                        navigation
                         modules={[Navigation, Pagination, ]}
                         pagination={{
                             dynamicBullets: true,
