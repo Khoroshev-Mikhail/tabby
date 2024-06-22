@@ -14,7 +14,7 @@ export default function Contacts(){
                         Режим работы интернет-магазина пн-сб 10:00-20:00
                     </div>
                     <div>
-                        <a className="_clicked_a" href="tel:+79199960129">
+                        <a className="_dashed" href="tel:+79199960129">
                             +7 (919) 996 01 29
                         </a>
                     </div>
@@ -22,7 +22,7 @@ export default function Contacts(){
                         Поддержка клиентов / Сотрудничество 
                     </div>
                     <div>
-                        <a className="_clicked_a" href="mailto:chabbychair@gmail.com">
+                        <a className="_dashed" href="mailto:chabbychair@gmail.com">
                             chabbychair@gmail.com
                         </a>
                     </div>

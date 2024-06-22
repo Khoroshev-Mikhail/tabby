@@ -13,20 +13,20 @@ body{
 }
 
 ._section {
-    @apply w-full p-5 h-svh md:h-auto relative
+    @apply w-full p-5 relative
 }
 ._wrapper {
     @apply relative z-30 p-5 max-w-[1536px] mx-auto  border-[0.5px] border-gray-200 rounded-2xl
     text-[18px]
 }
 ._h2{
-    @apply text-[50px] xs:text-[60px] md:text-[70px] lg:text-[80px] leading-none 
+    @apply text-[40px] xs:text-[50px] md:text-[60px] lg:text-[70px] leading-none font-bold
     py-5
 }
 h3{
-    @apply text-[20px] xs:text-[25px] md:text-[30px] lg:text-[35px] leading-none 
+    @apply text-[20px] xs:text-[25px] md:text-[30px] lg:text-[35px] leading-none font-bold
     py-3
 }
-._clicked_a{
+._dashed{
     @apply border-dashed border-b-[1px] border-gray-300 hover:border-none
 }
