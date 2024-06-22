@@ -68,7 +68,7 @@ export default function Header(){
                             IMAGES.map( (el, i) => {
                                 return <SwiperSlide key={ i }>
                                     <div className="">
-                                        <Image src={el} alt="Tabby chair" loading="eager" />
+                                        <Image src={el} alt="Tabby chair" loading="lazy" />
                                     </div>
                                 </SwiperSlide>
                             })
