@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, Keyboard } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -35,7 +35,7 @@ export default function Header(){
                 </h1>
                 <div className="w-full select-none">
                     <Swiper
-                        modules={[Pagination, Autoplay]}
+                        modules={[Pagination, Autoplay, Keyboard]}
                         breakpoints={{
                             0: {
                                 slidesPerView: 1,
@@ -48,15 +48,7 @@ export default function Header(){
                             768: {
                                 slidesPerView: 3,
                                 spaceBetween: 10
-                            },
-                            1024: {
-                                slidesPerView: 4,
-                                spaceBetween: 20
-                            },
-                            1200: {
-                                slidesPerView: 5,
-                                spaceBetween: 30
-                            },
+                            }
                         }}
                         autoplay={{
                             delay: 3000,
@@ -65,7 +57,12 @@ export default function Header(){
                         pagination={{
                             dynamicBullets: true,
                             clickable: true
-                          }}
+                        }}
+                        loop
+                        keyboard={{
+                            enabled: true,
+                            onlyInViewport: true,
+                        }}
                     >
                         {
                             IMAGES.map( (el, i) => {

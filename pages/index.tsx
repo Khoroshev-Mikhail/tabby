@@ -15,8 +15,8 @@ export default function Home() {
     return (
         <main className={`${inter.className}`}>
             <Header />
-            <Order />
             <AboutTabby />
+            <Order />
             <About />
             <Partners />
             <Help />

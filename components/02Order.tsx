@@ -10,10 +10,10 @@ export type color = {
 }
 
 const COLORS = [
-    { name: 'Красно-белый', color: '#000000', count: 0 },
-    { name: 'Синий', color: '#000000', count: 0 },
-    { name: 'Розовый', color: '#000000', count: 0 },
-    { name: 'Желтый', color: '#000000', count: 0 },
+    { name: 'Красно-белый', color: '#FF0000', count: 1 },
+    { name: 'Синий', color: '#0000FF', count: 0 },
+    { name: 'Розовый', color: '#00FF00', count: 0 },
+    { name: 'Желтый', color: '#FFFF00', count: 0 },
 ]
 
 export default function Order(){
@@ -29,7 +29,7 @@ export default function Order(){
                     <div>
                         Выберите цвет и количество
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col gap-y-2">
                         {
                             order.map((el, i) => {
                                 return <CountOrder state={ el } setState={ setOrder } key={ i }/>
