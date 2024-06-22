@@ -31,8 +31,8 @@ export default function Order(){
                     </div>
                     <div className="flex flex-col">
                         {
-                            order.map( el => {
-                                return <CountOrder state={ el } setState={ setOrder }/>
+                            order.map((el, i) => {
+                                return <CountOrder state={ el } setState={ setOrder } key={ i }/>
                             })
                         }
                     </div>

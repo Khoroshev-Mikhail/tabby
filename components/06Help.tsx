@@ -18,8 +18,8 @@ export default function Help(){
                     Помощь
                 </h2>
                 <div className="w-full flex flex-col select-none">
-                    {data.map(el => {
-                        return <Helpdiv {...el} />
+                    {data.map((el, i) => {
+                        return <Helpdiv {...el} key={i} />
                     })}
                 </div>
             </div>
