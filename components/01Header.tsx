@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -35,6 +35,7 @@ export default function Header(){
                 </h1>
                 <div className="w-full select-none">
                     <Swiper
+                        modules={[Pagination, Autoplay]}
                         breakpoints={{
                             0: {
                                 slidesPerView: 1,
@@ -57,7 +58,10 @@ export default function Header(){
                                 spaceBetween: 30
                             },
                         }}
-                        modules={[Navigation, Pagination, ]}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
                         pagination={{
                             dynamicBullets: true,
                             clickable: true
